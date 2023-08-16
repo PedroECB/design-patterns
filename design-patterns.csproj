@@ -6,6 +6,7 @@
     <RootNamespace>design_patterns</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <NoWarn>NU1803</NoWarn>
   </PropertyGroup>
 
 </Project>
