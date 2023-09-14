@@ -23,8 +23,12 @@ public class DbConnection
     public static DbConnection GetInstance()
     {
         if (_connection is null)
-            _connection = new DbConnection("Argo", "Fiat");
-
+        {
+            lock (typeof(DbConnection))
+            {
+                _connection = new DbConnection("host:1000;username:1;password:2", "Fiat");
+            }
+        }
         return _connection;
     }
 
