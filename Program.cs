@@ -3,9 +3,10 @@ using ClassLibrary;
 
 // See https://aka.ms/new-console-template for more information
 
-
 /* SINGLETON */
 // Utilizando a mesma instância da classe
+// Aplicabilidade =>
+
 // DbConnection dbConnection = new DbConnection("DB1", "123");
 // dbConnection.Connect();
 
@@ -15,8 +16,9 @@ using ClassLibrary;
 // instance1.Connect();
 
 
-/* STRAGEGY */
+/* STRATEGY */
 // Utilizando variações de um algoritmo específico e aplicando em classes distintas
+// Aplicabilidade =>
 
 TaxContext taxContext = new TaxContext();
 taxContext.SetTaxStrategy(new TaxSchoolStrategy());
